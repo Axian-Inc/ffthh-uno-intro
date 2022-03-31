@@ -1,0 +1,21 @@
+{
+  "solution": {
+    "path": "MyUnoApp.sln",
+    "projects": [
+		"MyUnoApp.Shared\\MyUnoApp.Shared.shproj",
+
+		"MyUnoApp.Droid\\MyUnoApp.Droid.csproj",
+
+		"MyUnoApp.iOS\\MyUnoApp.iOS.csproj",
+
+
+		"MyUnoApp.Wasm\\MyUnoApp.Wasm.csproj",
+
+		"MyUnoApp.macOS\\MyUnoApp.macOS.csproj",
+
+		"MyUnoApp.Skia.Gtk\\MyUnoApp.Skia.Gtk.csproj",
+
+		"MyUnoApp.Skia.Linux.FrameBuffer\\MyUnoApp.Skia.Linux.FrameBuffer.csproj",
+    ]
+  }
+}
