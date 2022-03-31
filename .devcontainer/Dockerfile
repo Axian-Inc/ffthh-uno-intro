@@ -31,4 +31,4 @@ RUN sudo apt install -y xauth coreutils gawk
 USER vscode
 RUN echo ~/.Xauthority
 RUN magiccookie=$(echo 'password'|tr -d '\n\r'|md5sum|gawk '{print $1}') && xauth add host.docker.internal:0 . $magiccookie
-#RUN cp ~/.Xauthority /workspaces/ffthh-uno-intro/
+ENV DISPLAY=host.docker.internal:0 

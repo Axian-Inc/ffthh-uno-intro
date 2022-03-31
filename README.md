@@ -8,6 +8,7 @@ A repository for setting up and playing with uno for the first time
 1. Open the repository root in VS Code
 1. When prompted by VS Code, open in a remote container
 1. After the container builds, VS Code may warn you there was an error installing the Uno extension. Accept the offer to "Install & Restart"
+1. Run the following command at root: `cp ~/.Xauthority /workspaces/ffthh-uno-intro/`
 
 # (Optional) Windows + Visual Studio Setup
 1. Update Visual Studio with the following packages
@@ -26,3 +27,4 @@ A repository for setting up and playing with uno for the first time
 1. Open the repository root in VS Code
 1. When prompted by VS Code, open in a remote container
 1. After the container builds, VS Code may warn you there was an error installing the Uno extension. Accept the offer to "Install & Restart"
+1. Run the following command at root: `cp ~/.Xauthority /workspaces/ffthh-uno-intro/`
