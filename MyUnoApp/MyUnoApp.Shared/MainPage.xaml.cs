@@ -27,5 +27,10 @@ namespace MyUnoApp
         {
             this.InitializeComponent();
         }
+        private void OnClick()
+        {
+            var dt = DateTime.Now.ToString("h:mm:ss");
+            texter.Text = $"The time was: {dt}";
+        }
     }
 }
