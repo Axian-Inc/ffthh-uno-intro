@@ -22,7 +22,7 @@ namespace MyUnoApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        const string TEXT = "THIS IS TEXT";
+        string TEXTVAR = "THIS IS TEXT";
         public MainPage()
         {
             this.InitializeComponent();

@@ -7,11 +7,24 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-<Grid>
-    <StackPanel>
-        <TextBlock Text="{Binding Value, ElementName=slider}" Margin="20" FontSize="50" />
-        <Slider x:Name="slider"/>
-    </StackPanel>
-</Grid>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Background="#2f5cb6" />
+        <Border Grid.Column ="1" Background="#1f3d7a"/>
+        <Border Grid.Row="1" Grid.ColumnSpan="2" Background="#152951"/>
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="{Binding Value, ElementName=slider}" Foreground="White" Margin="20" FontSize="50" />
+            <Slider x:Name="slider"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="{x:Bind TEXTVAR}" Foreground="White" Margin="20" FontSize="50" />
+        </StackPanel>  
+    </Grid>
 </Page>
