@@ -36,7 +36,7 @@ This project involves running a UI *inside* a container and rendering it on the 
 ```
 2. Ensure that local network clients can connect to the X server by running:
 ```
-> xhost + 127.0.0.1
+> xhost + localhost
 ```
 3. Test the Xquartz/Docker setup by running a container which attempts to render a UI on the host OS from the docker container. We set the `DISPLAY` environment variable to `use the docker hostname for localhost (host.docker.internal) and send the UI to the zeroth (0) display.`
 ```
